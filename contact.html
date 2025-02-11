@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+img{
+max-width: 15%;
+height: auto;
+}
+.nav{
+    color: white;
+    padding-left: 30px;
+    padding-top: 20px;
+    
+}
+.nav ul a{
+    padding: 20px;
+}
+.head h1{
+    color: rgb(226, 21, 107);
+}
+.head {
+    text-align: center;
+    padding: 20px;
+    width: 500px;
+    margin: 10px auto;
+    color: #fff;
+}
+.container label{
+  display: block;
+  margin: 1px auto;
+  text-align: center;
+  width: 300px;
+  transform: translateX(-125px);
+}
+
+.container input{
+  display: block;
+  width: 300px;
+  height: auto;
+  border: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 1px auto 0px auto;
+  padding: 5px;
+  
+}
+.container textarea{
+  display: block;
+  width: 300px;
+  height: 100px;
+  border: 1px solid rgba(255,255,255,0.1);
+  overflow: hidden;
+  position: relative;
+  margin: 1px auto 0px auto;
+  padding: 1px;
+}
+.container label[for="message"]{
+  margin-left: 110px;
+}
+.container label{
+  position: relative;
+}
+
+.container label:after{
+  content: "*";
+  color: rgb(163, 13, 13);
+  position: absolute;
+  top: 0;
+  right: 120px;
+}
+.container label[for="message"]:after{
+  content: "*";
+  color: rgb(163, 13, 13);
+  position: absolute;
+  top: 0;
+  right: 110px;
+}
+button[type="button"]{
+  background-color: rgb(226, 21, 107);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto;
+  display: block;
+  padding-bottom: 10px;
+  width: 300px;
+  height: auto;
+}
+
+button[type="button"]:hover{
+  background-color: #e22ae2;
+}
+.hero .icon {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.hero .icon li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.hero .icon {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.hero .icon li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.hero .icon li:last-child {
+  margin-right: 0;
+}
+.hero .icon img {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.2s;
+}
+.hero .icon img:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 480px) {
+            .content li{
+                padding-right: 5px;
+                font-size: 18px;
+            }
+            .nav ul {
+                flex-direction: column;
+            }
+            .nav ul a {
+                padding: 5px;
+                font-size: 12px;
+                text-align: center;
+            }
+}
+@media only screen and (max-width: 768px) {
+  .head {
+    width: 100%;
+    padding: 20px;
+  }
+  .container {
+    width: 100%;
+    padding: 20px;
+  }
+  button[type="button"] {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .nav ul {
+    flex-direction: column;
+  }
+  .nav ul a {
+    padding: 10px;
+    font-size: 11px;
+  }
+  .head {
+    padding: 10px;
+  }
+  .container {
+    padding: 10px;
+  }
+  .hero .icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media only screen and (max-width: 320px) {
+.nav ul a {
+padding: 5px;
+font-size: 10px;
+}
+.head {
+padding: 5px;
+}
+.container {
+padding: 5px;
+}
+.hero .icon img {
+width: 30px;
+height: 30px;
+}
+.container label {
+width: 100%;
+font-size: 14px;
+margin-left: 0px;
+}
+.container input {
+width: 80%;
+height: 30px;
+font-size: 14px;
+}
+.container textarea {
+width: 80%;
+height: 80px;
+font-size: 14px;
+}
+.container label[for="message"] {
+margin-left: 8px;
+}
+button[type="button"] {
+    width: 80%;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
+</style>
+<body>
+    <img src="image/logo.jpeg" alt="logo">
+    <div class="nav">
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="resume.html">Resume</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+    </div>
+    <div class="head">
+        <h1>Contact Me</h1>
+    
+    <form class="container">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Name" required><br>
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required><br>
+        
+        <label for="message">Message</label>
+        <textarea name="message" id="message" placeholder="Enter Message..." required></textarea><br>
+       
+        <button type="button" onclick="sendToWhatsapp()">Submit</button>
+    
+    </form>
+</div>
+<div class="hero">
+    <ul class="icon">
+        <li>
+            <a href="https://www.linkedin.com/in/swetha-s-9995961b0/" target="_blank">
+                <img src="image/linkedin.png.jpeg" alt="linkedin">
+            </a>
+        </li>
+        <li>
+            <a href="https://github.com/projects" target="_blank">
+                <img src="image/github.png.jpeg" alt="github">
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/swe_angelic_princess/" target="_blank">
+                <img src="image/insta.png.jpeg" alt="instagram">
+            </a>
+        </li>
+    </ul>
+</div>
+    <script>
+        function sendToWhatsapp(){
+          var name = document.getElementById('name').value;
+          var email = document.getElementById('email').value;
+          var message = document.getElementById('message').value;
+          var whatsappMessage = `Name: ${name} Email: ${email}Message: ${message}`;
+          var whatsappURL = `https://wa.me/+919944311281?text=${encodeURIComponent(whatsappMessage)}`;
+          window.open(whatsappURL, '_blank');
+        }
+      </script> 
+</body>
+</html>

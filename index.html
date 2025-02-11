@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+   *{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+}
+img{
+max-width: 15%;
+height: auto;
+}
+.nav{
+    color: white;
+    padding-left: 30px;
+    padding-top: 20px;
+    
+}
+.nav ul a{
+    padding: 20px;
+}
+.main h1{
+    color: rgb(226, 21, 107);
+    padding-left: 50px;
+    padding-top: 40px;
+} 
+.main p{
+    color: white;
+    font-size: larger;
+    padding-left: 50px;
+    padding-top: 40px;
+
+}
+.container img{
+    max-width: 25%;
+    height: 300px;
+}
+@media screen and (max-width: 480px) {
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+
+        .container img {
+            margin: 20px auto;
+            max-width: 80%;
+            height: auto;
+            transform: translateX(70px) translateY(-40px); 
+}
+     
+            .main h1 {
+                font-size: 20px;
+                margin-top: -40px;
+                margin-left: -20px;
+            }
+            .main p {
+                font-size: 18px;
+                margin-left: -20px;
+            }
+            .nav ul {
+                flex-direction: column;
+            }
+            .nav ul a {
+                padding: 5px;
+                padding-left: 1px;
+                font-size: 11px;
+                text-align: center;
+            }
+        }
+</style>
+
+<body>
+    <img src="image/logo.jpeg" alt="logo">
+    <div class="nav">
+        <ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="resume.html">Resume</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </ul>
+    </div>
+    <div class="container">
+        <img src="image/swe.jpeg.jpeg" style="float:right; margin: 80px 150px 0 0;">
+    </div>
+    <div class="main">
+        <h1>SWETHA SENTHILVEL</h1>
+        <p>As a frontend developer, I'm passionate about crafting intuitive and visually stunning user <br> experiences. I'm well-versed in the latest industry trends and technologies, and <br>I'm always looking for ways to improve my skills.When I'm not coding, you can find <br> me listening to the music. I'm excited to share my projects and experiences <br> with you, and I look forward to connecting with like-minded <br> individuals in the tech community.
+            </p>
+    </div>  
+   
+
+</body>
+
+
+
+</html>
